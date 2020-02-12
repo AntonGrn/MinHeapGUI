@@ -5,4 +5,4 @@ Measures and displays the time taken to build the heap (ms).
 
 Optional tree traversal strategies.
 
-<img src="./image.png " width="650">
+<img src="./image.png " width="620">
