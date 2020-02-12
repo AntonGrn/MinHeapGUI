@@ -1,0 +1,47 @@
+.root{
+    -fx-background-color: #36373B;
+    }
+
+Label {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    }
+
+#infoLabel, #infoLabel2 {
+   -fx-text-fill: gray;
+   }
+
+Circle, Line {
+    -fx-stroke: GRAY;
+    -fx-stroke-width: 3;
+    -fx-fill: #274AFA;
+    }
+
+.text {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: white;
+    }
+
+.indices {
+-fx-text-fill: gray;
+    }
+
+/*=======================================  BUTTON ============================================================ */
+
+.button {
+    -fx-background-color:#2d2d2d ;
+    -fx-text-fill: white;
+    -fx-pref-height: 30px;
+}
+
+.button:hover {
+    -fx-background-color:gray;
+}
+
+.button:pressed {
+    -fx-background-color: #346189;
+}
