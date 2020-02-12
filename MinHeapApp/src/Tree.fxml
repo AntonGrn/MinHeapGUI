@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="610.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TreeController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefWidth="610.0" spacing="5.0" VBox.vgrow="NEVER">
+         <children>
+            <Label text="Input: " />
+            <TextField fx:id="f1" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f2" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f3" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f4" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f5" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f6" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f7" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f8" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f9" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f10" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f11" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f12" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f13" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f14" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="f15" alignment="CENTER" prefHeight="25.0" prefWidth="28.0" />
+            <Button fx:id="btnReset" mnemonicParsing="false" onAction="#reset" text="Reset">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <Pane fx:id="nodePane" maxWidth="-Infinity" prefWidth="600.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="14.0" />
+         </VBox.margin>
+         <children>
+            <Circle fx:id="c1" fill="#b6dbfc" layoutX="300.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c2" fill="#b6dbfc" layoutX="140.0" layoutY="80.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c3" fill="#b6dbfc" layoutX="460.0" layoutY="80.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c4" fill="#b6dbfc" layoutX="60.0" layoutY="140.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c5" fill="#b6dbfc" layoutX="220.0" layoutY="140.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c6" fill="#b6dbfc" layoutX="380.0" layoutY="140.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c7" fill="#b6dbfc" layoutX="540.0" layoutY="140.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c8" fill="#b6dbfc" layoutX="20.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c9" fill="#b6dbfc" layoutX="100.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c10" fill="#b6dbfc" layoutX="180.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c11" fill="#b6dbfc" layoutX="260.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c12" fill="#b6dbfc" layoutX="340.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c13" fill="#b6dbfc" layoutX="420.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c14" fill="#b6dbfc" layoutX="500.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="c15" fill="#b6dbfc" layoutX="580.0" layoutY="220.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="t1" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="7.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t2" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="67.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t3" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="67.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t4" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="127.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t5" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="127.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t6" alignment="CENTER" contentDisplay="CENTER" layoutX="359.0" layoutY="126.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t7" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="127.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t8" alignment="CENTER" contentDisplay="CENTER" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t9" alignment="CENTER" contentDisplay="CENTER" layoutX="80.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t10" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t11" alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t12" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t13" alignment="CENTER" contentDisplay="CENTER" layoutX="400.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t14" alignment="CENTER" contentDisplay="CENTER" layoutX="480.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="t15" alignment="CENTER" contentDisplay="CENTER" layoutX="560.0" layoutY="207.0" prefHeight="27.0" prefWidth="40.0" text="55" textFill="#e85555">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoLabel" layoutX="8.0" layoutY="-3.0" prefHeight="35.0" prefWidth="252.0" text="Info">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoLabel2" layoutX="430.0" layoutY="-8.0" text="-1: To exlude value from heap" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Pane>
+      <GridPane fx:id="buttonPane" maxWidth="-Infinity" prefWidth="605.0" VBox.vgrow="NEVER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="55.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="85.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="85.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="85.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="85.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="50.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="75.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets bottom="8.0" left="7.0" right="5.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <Button fx:id="btnPreOrder" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#traverse" prefHeight="30.0" prefWidth="80.0" text="Pre-order" GridPane.columnIndex="2" />
+            <Button fx:id="btnInOrder" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#traverse" prefHeight="30.0" prefWidth="80.0" text="In-order" GridPane.columnIndex="1" />
+            <Button fx:id="btnPostOrder" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#traverse" prefHeight="30.0" prefWidth="80.0" text="Post-order" GridPane.columnIndex="3" />
+            <Button fx:id="btnNLogN" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buildHeap" prefHeight="30.0" prefWidth="70.0" text="O(NLogN)" GridPane.columnIndex="7" />
+            <Label text="Traverse:" />
+            <Button fx:id="btnLevelOrder" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#traverse" prefHeight="30.0" prefWidth="80.0" text="Level-order" GridPane.columnIndex="4" />
+            <Button fx:id="btnN" defaultButton="true" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#buildHeap" prefHeight="30.0" prefWidth="70.0" text="O(N)" GridPane.columnIndex="6" />
+            <Label text="Build:" GridPane.columnIndex="5" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" prefWidth="610.0" spacing="5.0">
+         <children>
+            <Label text="Result: " />
+            <TextField fx:id="d0" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0">
+               <HBox.margin>
+                  <Insets left="13.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="d1" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d2" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d3" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d4" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d5" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d6" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d7" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d8" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d9" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d10" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d11" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d12" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d13" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d14" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+            <TextField fx:id="d15" alignment="CENTER" editable="false" prefHeight="25.0" prefWidth="28.0" />
+         </children>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="200.0" spacing="6.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="7" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="8" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="9" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="10" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="11" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="12" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="13" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="14" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="27.0" styleClass="indices" text="15" />
+         </children>
+         <padding>
+            <Insets left="61.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label text="Time:" />
+            <TextField fx:id="runtimeField" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="70.0" text="0,2332">
+               <HBox.margin>
+                  <Insets left="27.0" />
+               </HBox.margin>
+            </TextField>
+            <Label text="milliseconds">
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="6.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
