@@ -1,5 +1,5 @@
 # MinHeap
-Builds a MinHeap according to selected time complexity algorithm. 
+Binary tree GUI for educational purpose.
 
 Measures and displays the time taken to build the heap (ms).
 
